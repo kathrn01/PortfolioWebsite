@@ -1,7 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
 
 body {
    font-family: 'Cormorant', serif;
    background-color: #F0EFDD;
    text-align: center;
+}
+
+header {
+   padding: 1em 0;
+}
+
+.hero-bg {
+   padding-bottom: 4em;
+}
+
+.hero-bg a {
+   text-decoration: none; 
+   font-weight: bold;
+   font-size: 1.2rem;
+}
+
+section {
+   margin: 0 1em;
+}
+
+h1 {
+   font-family: 'Cutive Mono', monospace;
+   font-size: 2.5rem; 
+   margin: 2em 0 1.2em; 
+}
+
+h1 span {
+   text-transform: uppercase;
 }
