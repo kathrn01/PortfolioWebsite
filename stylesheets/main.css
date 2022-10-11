@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=EB+Garamond:wght@700&display=swap');
 
 body {
-   font-family: 'Cormorant', serif;
+   font-family: 'Monospace';
    background-color: #0b2ca3;
    text-align: left;
    margin: 0;
@@ -17,7 +16,7 @@ header {
 }
 
 .hero-bg a {
-   font-family: 'Cutive Mono', monospace;
+   font-family: 'EB Garamond', serif;
    text-decoration: none; 
    font-weight: bold;
    font-size: 1.2rem;
@@ -33,7 +32,7 @@ p {
 }
 
 h1 {
-   font-family: 'Cutive Mono', monospace;
+   font-family: 'EB Garamond', serif;
    font-size: 2.5rem; 
    color: #e7eb15;
    margin: 2em 0 1.2em; 
