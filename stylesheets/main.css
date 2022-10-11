@@ -4,7 +4,7 @@
 body {
    font-family: 'Cormorant', serif;
    background-color: #F0EFDD;
-   text-align: center;
+   text-align: left;
 }
 
 header {
@@ -12,6 +12,7 @@ header {
 }
 
 .hero-bg {
+   background-color: #beecfa;
    padding-bottom: 4em;
 }
 
