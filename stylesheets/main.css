@@ -3,7 +3,7 @@
 
 body {
    font-family: 'Cormorant', serif;
-   background-color: #a8cfff;
+   background-color: #0b2ca3;
    text-align: left;
    margin: 0;
 }
@@ -13,7 +13,6 @@ header {
 }
 
 .hero-bg {
-   background-color: #f5e749;
    margin: 0;
 }
 
@@ -29,12 +28,14 @@ section {
 }
 
 p {
+   color: #ffffff;
    margin: 0 1em;
 }
 
 h1 {
    font-family: 'Cutive Mono', monospace;
    font-size: 2.5rem; 
+   color: #e7eb15;
    margin: 2em 0 1.2em; 
 }
 
