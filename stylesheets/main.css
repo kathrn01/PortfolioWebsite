@@ -3,7 +3,7 @@
 
 body {
    font-family: 'Cormorant', serif;
-   background-color: #F0EFDD;
+   background-color: #a8cfff;
    text-align: left;
 }
 
@@ -12,8 +12,8 @@ header {
 }
 
 .hero-bg {
-   background-color: #BEECFA;
-   padding-bottom: 4em;
+   background-color: #f5e749;
+   margin: 0;
 }
 
 .hero-bg a {
