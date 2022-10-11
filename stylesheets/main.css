@@ -12,11 +12,12 @@ header {
 }
 
 .hero-bg {
-   background-color: #beecfa;
+   background-color: #BEECFA;
    padding-bottom: 4em;
 }
 
 .hero-bg a {
+   font-family: 'Cutive Mono', monospace;
    text-decoration: none; 
    font-weight: bold;
    font-size: 1.2rem;
