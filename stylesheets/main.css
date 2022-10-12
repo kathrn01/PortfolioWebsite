@@ -4,6 +4,7 @@ body {
    font-family: 'Monospace';
    background-color: #0b2ca3;
    text-align: left;
+   justify-content: center; 
    margin: 0;
 }
 
@@ -11,15 +12,21 @@ header {
    padding: 1em 0;
 }
 
-.hero-bg {
+.hero {
    margin: 0;
+   display: flex;
 }
 
-.hero-bg a {
+.hero a {
    font-family: 'EB Garamond', serif;
+   color: #e7eb15;
    text-decoration: none; 
    font-weight: bold;
    font-size: 1.2rem;
+}
+
+.about-page {
+   text-decoration: underline;
 }
 
 section {
