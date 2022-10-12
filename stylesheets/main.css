@@ -1,55 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=EB+Garamond:wght@700&display=swap');
 
-body {
-   font-family: 'Monospace';
+/* RESOURCES: I used https://www.youtube.com/watch?v=ZFQkb26UD1Y as a learning resource to build this website. */
+
+* { /* All elements */
+	padding: 0; 
+	margin: 0; 
+	box-sizing: border-box; /* box-sizing sets how height and width of an element is calculated. border-box means to account for border dimensions. */
+}
+
+html {
+   font-family: monospace, monospace;
    background-color: #0b2ca3;
    text-align: left;
    justify-content: center; 
    margin: 0;
 }
 
-header {
-   padding: 1em 0;
-}
-
-.hero {
-   margin: 0;
-   display: flex;
-   width: 100%;
-   height: 100%;
-}
-
-.hero a {
-   font-family: 'EB Garamond', serif;
-   color: #e7eb15;
-   text-decoration: none; 
-   font-weight: bold;
-   font-size: 1.2rem;
-}
-
-.about-page {
-   margin: 0;
-   display: flex;
-   width: 100%;
-   height: 100%
-}
-
-section {
-   margin: 0 1em;
-}
-
 p {
    color: #ffffff;
-   margin: 0 1em;
+}
+
+a { /* all links */
+	font-family: 'EB Garamond', serif;
+	color: #e7eb15;
+	text-decoration: none; 
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+.container { /* will be reused in many sections */
+	min-height: 100vh; /* vh or vw represents viewport-percentage length unit; ie if viewport width is 800px, a value of 50vw will be 400px*/
+	width: 100%;
+	display: flex; 
+	align-items: center;
+	justify-content: center; 
+}
+
+#hero {
+	position: relative;
+}
+
+#projects {
+	position: relative; 
+}
+
+#projects .project {
+	display: flex; 
+	flex-basis: 80%;
+	align-items: flex-start;
+	padding: 30px; 
+	border-radius: 10px; 
+	background-size: cover; 
+	margin: 10px 5%;
+	background-color: #e7eb15;
 }
 
 h1 {
-   font-family: 'EB Garamond', serif;
-   font-size: 2.5rem; 
-   color: #e7eb15;
-   margin: 2em 0 1.2em; 
+	font-family: 'EB Garamond', serif;
+    font-size: 2.5rem;
+    color: #e7eb15;
+    position: relative;
+	display: block;
 }
 
-h1 span {
-   text-transform: uppercase;
+h2 { 
+	font-family: 'EB Garamond', serif; 
+	font-size: 1.5rem;
+	color: #0b2ca3;
 }
