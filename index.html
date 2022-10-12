@@ -1,59 +1,51 @@
 <!DOCTYPE html> <!--- Must be first line --->
+
+<!--- RESOURCES: I used https://www.youtube.com/watch?v=ZFQkb26UD1Y as a learning resource to build this website. --->
+
 <html lang="en">
-   <head> <!--- <head> element contains various html elements: page title, character set, CSS styles, scripts, etc. Most work isn't inside this element --->
-      <meta charset="UTF-8"> <!--- Part of boilerplate code --->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie-edge">
+	<head> <!--- <head> element contains various html elements: page title, character set, CSS styles, scripts, etc. Most work isn't inside this element --->
+	<meta charset="UTF-8"> <!--- Part of boilerplate code --->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
 
-      <link rel="stylesheet" href="stylesheets/main.css"> <!--- attach css document to this element --->
-      <title> Katharine's Portfolio </title>
-   </head>
+        <link rel="stylesheet" href="stylesheets/main.css"> <!--- attach css document to this element --->
+		<title> Katharine's Portfolio </title>
+        </head>
 
-  <body> <!--- Most work takes place in this element --->
- 
-      <div class="hero"> <!--- A div is a way to define a section or area of layout, they have attributes ie. this one is named: hero-bg (hero is top portion of website) --->
-	<section class="top">
-	   <header> <!--- logo, navigation --->
-		   <a href="#">about</a>
-	   </header> 
-	</section>
-
-	  </div>
-	  
-  <section class="intro">
-	  <div class="intro-page">
-		  <h1>Hi there, welcome to my portfolio.</h1>
-	 	  <p>My name is Katharine. I enjoy learning about software development, and more recently, web development (this website is the product!).</p>
-	  </div>
-  </section>
-
-  <section class="about">
-	   <div class="about-page">
-	      <h1> About Me </h1>
-	         <p>Aside from software development, my interests are in art, design, and antique/vintage items like books and magazines. I enjoy photography and oil painting, and learning about interior design and architecture.<br>
-		   If I were to pick a favourite aspect of software development (from my experiences) I would choose UX/UI planning and implementing. I'm always inspired by thinking about what the end-user will see and interact with.</p>
-	  </div>
-  </section>  
-   
-   <section class="projects">
-	   <div class="projects-page">
-	      <h1> This website </h1>
-	         <p>When beginning my job search, I noticed many roles were looking for developers with front-end tools, which I lacked experience with. I decided to re-learn HTML and CSS in the last few months, and I'm working on incorporating other tools. 
-			 This website is a work in progress and I look forward to adding new features as I learn. </p>
-        <h1> GradeTracker </h1>
-           <p>GradeTracker is my first personal project built with Swift, SwiftUI, and Core Data. It allows a user to add terms, then courses, and then syllabus items for each course. 
-		   The user can set a goal grade for a course and the app will adjust the target grade for all of that course's syllabus items based on what grades are needed to achieve the goal.
-		   It's a tool that I always thought would come in handy when I was a student, and I'm really enjoying the process of planning/adding in features that some of the programs I used for similar purposes lacked.</p>
-        <h1> Academic Group Project </h1>
-            <p>In a software engineering course at university, four other students and I built an Android application with Java and HSQLDB that allows users to rate and review video games. 
-		   We used agile development principles like peer reviews, sprints, user stories, and retrospectives.</p>
-   
-	   </div>
-   </section> 
-  
-   <section class="experience">
-   </section>
-
-  </body>
-
+	<body> <!--- Most work takes place in this element --->
+		<!--- HERO SECTION --->
+		<section id="hero">
+			<div class="hero container">
+				<div>
+					<h1>Hi there, welcome to my portfolio.</h1>
+					<p>My name is Katharine, and here you'll find info about my projects and interests.</p>
+				</div>
+			</div>
+		</section>
+		<!--- END HERO SECTION --->
+		
+		
+		<!--- PROJECTS SECTION --->
+		<section id="projects">
+			<div class="projects container">
+				<h1>Projects</h1>
+				<div class="project">
+					<h2>GradeTracker</h2>
+				</div>
+				
+				<div class="project">
+					<h2>Academic Group Project: Game Rating System</h2>
+				</div>
+				
+				<div class="project">
+					<h2>This Website</h2>
+				</div>
+				
+			</div>
+			
+			
+		</section>
+		<!--- END PROJECTS SECTION --->
+		
+	</body>
 </html>
