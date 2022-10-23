@@ -44,15 +44,20 @@ a { /* all links */
 	position: relative; 
 }
 
+#aboutme {
+	position: relative;
+}
+
 #projects .project {
-	display: flex; 
-	flex-basis: 80%;
-	align-items: flex-start;
-	padding: 30px; 
-	border-radius: 10px; 
-	background-size: cover; 
-	margin: 10px 5%;
-	background-color: #e7eb15;
+display: flex; 
+flex-basis: 80%;
+align-items: flex-start;
+padding: 30px; 
+border-radius: 10px; 
+background-size: cover; 
+margin: 10px 5%;
+background-color: #e7eb15;
+
 }
 
 h1 {
