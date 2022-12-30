@@ -1,13 +1,252 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+/* RESOURCES: I used https://www.youtube.com/watch?v=ZFQkb26UD1Y as a learning resource */
+
+* { /* All elements */
+  padding: 0; 
+  margin: 0; 
+  box-sizing: border-box; /* box-sizing sets how height and width of an element is calculated. border-box means to account for border dimensions. */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+nav {
+  display: flex; 
+  justify-content: flex-end;
+  height: 100px; 
+  padding: 10px 40px;
+}
+
+.nav-links {
+  display: flex;
+  float: left;
+}
+
+html {
+   font-family: monospace, monospace;
+   background-color: #f8ffec;
+   text-align: left;
+   justify-content: center; 
+   margin: 0;
+   scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 5.5vw;
+  line-height: 1;
+  font-weight: normal;
+  font-family: 'EB Garamond', serif;
+}
+
+h2 {
+  font-size: 25px; 
+  font-family: 'EB Garamond', serif;
+}
+
+h3 {
+  font-size: 1.5vw;
+  font-family: 'EB Garamond', serif;
+  font-weight: lighter;
+  padding: 10vh 0;
+  padding-right: 15vw;
+}
+
+p {
+   color: #000000;
+}
+
+a { /* navigation links */
+  font-family: 'EB Garamond', serif;
+  color: #37a75c;
+  text-decoration: none; 
+  font-size: 2vw;
+  padding: 1.5vh 3vw;
+}
+
+.container { /* will be reused in many sections */
+  min-height: 100vh; /* vh or vw represents viewport-percentage length unit; ie if viewport width is 800px, a value of 50vw will be 400px*/
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+#homepage .container {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#homepage {
+  position: relative;
+}
+
+.homepage-text {
+  width: 75%;
+  padding: 0 7vw;
+}
+
+.homepage a {
+  font-size: inherit;
+  padding: 0;
+}
+
+#projects {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.page-title {
+  font-size: 3vw;
+  padding: 4vh 3vw;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  margin: 0 auto;
+  height: 80%;
+  max-width: 85%;
+  text-align: center;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+/* Hide the images by default */
+article {
+  background-color: #8bcc9a;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  border-radius: 3vw;
+  transition: var(--transition);
+  transition: 0.6s ease;
+  padding: 2% 10%;
+}
+
+article.activeSlide {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+article.lastSlide {
+  transform: translateX(-100%);
+}
+
+article.nextSlide {
+  transform: translateX(100%); 
+}
+
+.project-name{
+  padding: 0 3% 5%;
+  display: flex;
+  color: #f8ffec;
+  justify-content: center;
+  font-size: 2.5vw;
+}
+
+.project {
+  display: flex;
+  height: 90%;
+  padding: 2% 10%;
+}
+
+.project-description {
+  text-align: left;
+  font-size: 1.1vw;
+  padding-right: 30%;
+}
+
+li {
+  line-height: 120%;
+  padding: 3%;
+}
+
+.project .video-container {
+  width: 30%;
+  height: 85%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  height: 10%;
+  width: 4%;
+  top: 45%;
+  color: black;
+  border: none;
+  border-radius: 10%;
+  transition: 0.6s ease;
+  user-select: none;
+  font-size: 100%;
+  color: #ffffff;
+  background-color: #000000;
+  opacity: 50%;
+}
+
+/* Position the "next button" to the right */
+.next {
+  left: 95%;
+}
+
+.prev {
+  left: 1%;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes activeSlide {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* end CSS for slideshow */
+
+#aboutme {
+  position: relative;
 }
