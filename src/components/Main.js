@@ -1,8 +1,10 @@
 import React from 'react';
+import Navbar from './Navbar';
 
 export default function Main(){
 	return (
 		<section id="homepage">
+			<Navbar />
 			<div className="homepage container">
 			<div className="homepage-text">
 				<h1> Hi, my name is Katharine. </h1>

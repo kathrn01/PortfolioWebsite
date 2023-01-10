@@ -1,22 +1,35 @@
 
 /* RESOURCES: I used https://www.youtube.com/watch?v=ZFQkb26UD1Y as a learning resource */
 
+/* referenced https://www.youtube.com/watch?v=yU7jJ3NbPdA when learning about media queries */
+@media (max-width: 1000px) {
+  .nav-links {
+    flex-direction: column;
+  }
+}
+
 * { /* All elements */
   padding: 0; 
   margin: 0; 
   box-sizing: border-box; /* box-sizing sets how height and width of an element is calculated. border-box means to account for border dimensions. */
 }
 
+.site-logo {
+  height: 3vw;
+  min-height: 30px;
+  align-self: center;
+}
+
 nav {
-  display: flex; 
-  justify-content: flex-end;
-  height: 100px; 
-  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  height: 15vh; 
+  padding: 2em 3em;
 }
 
 .nav-links {
-  display: flex;
-  float: left;
+  justify-content: space-between;
+  width: 30vw;
 }
 
 html {
@@ -54,10 +67,18 @@ p {
 
 a { /* navigation links */
   font-family: 'EB Garamond', serif;
+  border: .5px solid;
   color: #37a75c;
   text-decoration: none; 
   font-size: 2vw;
-  padding: 1.5vh 3vw;
+  padding: 1% 3vw;
+  margin: 0 5%;
+}
+
+a:hover {
+  background-color: #ffffff;
+  color: black;
+  border-color: black;
 }
 
 .container { /* will be reused in many sections */
