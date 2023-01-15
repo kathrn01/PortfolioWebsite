@@ -4,10 +4,10 @@ import logo from '../site-logo.png'
 export default function Navbar() {
 	return (
 		<nav>
-			<img className="site-logo" src={logo} />
+			<a href="https://kathrn01.github.io/PortfolioWebsite/"><img className="site-logo" src={logo} /> </a>
 			<div className="nav-links">
-				<a href="#projects">projects</a>
-				<a href="#about">about</a>
+				<a className="nav-link" href="#projects">projects</a>
+				<a className="nav-link" href="#about-me">about</a>
 			</div>
 		</nav>
 	)

@@ -2,44 +2,93 @@
 /* RESOURCES: I used https://www.youtube.com/watch?v=ZFQkb26UD1Y as a learning resource */
 
 /* referenced https://www.youtube.com/watch?v=yU7jJ3NbPdA when learning about media queries */
-@media (max-width: 1000px) {
+
+/* referenced https://www.youtube.com/watch?v=a_7Z7C_JCyo when learning how to implement a slide show (2:13:40 - 2:50:52)*/
+@media (max-width: 600px) {
   .nav-links {
-    flex-direction: column;
+    display: block;
   }
+}
+
+.App {
+  scroll-snap-type: y mandatory;
+  overflow: scroll;
+  height: 100vh;
+}
+
+.App section {
+  scroll-snap-align: start;
+  width: 100%;
+  height: 100%;
+  padding: 1% 0 10% 0;
 }
 
 * { /* All elements */
   padding: 0; 
   margin: 0; 
   box-sizing: border-box; /* box-sizing sets how height and width of an element is calculated. border-box means to account for border dimensions. */
+  align-items: center; 
 }
 
-.site-logo {
-  height: 3vw;
-  min-height: 30px;
-  align-self: center;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  height: 15vh; 
-  padding: 2em 3em;
-}
-
-.nav-links {
-  justify-content: space-between;
-  width: 30vw;
-}
-
-html {
+html, body {
    font-family: monospace, monospace;
    background-color: #f8ffec;
    text-align: left;
    justify-content: center; 
    margin: 0;
    scroll-behavior: smooth;
+   overflow: hidden;
 }
+
+.site-logo {
+  height: 3vw;
+  min-height: 30px;
+  align-self: center;
+  margin: 2vw;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 15%; 
+}
+
+.nav-links {
+  width: 30vw;
+}
+
+.nav-links .nav-link { /* navigation links */
+  font-family: 'EB Garamond', serif;
+  border: .5px solid;
+  color: #37a75c;
+  text-decoration: none; 
+  font-size: 2vw; 
+  font-weight: normal;
+  padding-inline: 10%;
+  padding-block-end: 1%;
+  margin: 2% 5%;
+}
+
+.nav-link:hover {
+  background-color: #ffffff;
+  color: black;
+  border-color: black;
+  transition: 0.3s ease-in;  
+}
+
+a.nav-text {
+  color: #37a75c;
+  text-decoration: none;
+  font-family: 'EB Garamond', serif;
+  padding: 4vh 3vw;
+  align-self: center;
+  font-size: max(10px, 1.5vw);
+}
+
+.bottom-nav {
+  justify-content: flex-end;
+}
+
 
 h1 {
   font-size: 5.5vw;
@@ -49,12 +98,14 @@ h1 {
 }
 
 h2 {
-  font-size: 25px; 
+  font-size: max(3vw, 20px); 
   font-family: 'EB Garamond', serif;
+  font-weight: normal;
+  color: #37a75c;
 }
 
 h3 {
-  font-size: 1.5vw;
+  font-size: max(1.5vw, 15px);
   font-family: 'EB Garamond', serif;
   font-weight: lighter;
   padding: 10vh 0;
@@ -65,22 +116,6 @@ p {
    color: #000000;
 }
 
-a { /* navigation links */
-  font-family: 'EB Garamond', serif;
-  border: .5px solid;
-  color: #37a75c;
-  text-decoration: none; 
-  font-size: 2vw;
-  padding: 1% 3vw;
-  margin: 0 5%;
-}
-
-a:hover {
-  background-color: #ffffff;
-  color: black;
-  border-color: black;
-}
-
 .container { /* will be reused in many sections */
   min-height: 100vh; /* vh or vw represents viewport-percentage length unit; ie if viewport width is 800px, a value of 50vw will be 400px*/
   width: 100%;
@@ -89,13 +124,11 @@ a:hover {
   justify-content: center; 
 }
 
+
+
 #homepage .container {
   justify-content: flex-start;
   align-items: flex-start;
-}
-
-#homepage {
-  position: relative;
 }
 
 .homepage-text {
@@ -104,29 +137,27 @@ a:hover {
 }
 
 .homepage a {
-  font-size: inherit;
-  padding: 0;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
 }
 
-#projects {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
 .page-title {
   font-size: 3vw;
-  padding: 4vh 3vw;
+  padding: 2% 5%;
 }
 
+
+/* referenced https://www.youtube.com/watch?v=a_7Z7C_JCyo when learning how to implement a slide show (2:13:40 - 2:50:52)*/
 /* Slideshow container */
 .slideshow-container {
-  margin: 0 auto;
-  height: 80%;
-  max-width: 85%;
+  height: 75%;
   text-align: center;
   position: relative;
   display: flex;
   overflow: hidden;
+  margin: 2% 5%;
+  justify-content: center;
 }
 
 /* Hide the images by default */
@@ -158,23 +189,24 @@ article.nextSlide {
 }
 
 .project-name{
-  padding: 0 3% 5%;
+  padding: 0 3% 3%;
   display: flex;
   color: #f8ffec;
   justify-content: center;
-  font-size: 2.5vw;
+  font-size: max(25px, 2.5vw);
 }
 
 .project {
-  display: flex;
-  height: 90%;
-  padding: 2% 10%;
+  display: inline-flex;
+  align-items: flex-start;
+  padding: 0 10% 10%;
+  height: 100%;
 }
 
 .project-description {
   text-align: left;
-  font-size: 1.1vw;
-  padding-right: 30%;
+  font-size: max(10px, 1.1vw);
+  padding-right: 15px;
 }
 
 li {
@@ -182,19 +214,23 @@ li {
   padding: 3%;
 }
 
-.project .video-container {
-  width: 30%;
-  height: 85%;
+.project .media-container {
+  width: 100%;
+  height: 100%;
 }
+
+/* referenced https://www.youtube.com/watch?v=a_7Z7C_JCyo when learning how to implement a slide show (2:13:40 - 2:50:52)
+the next and previous buttons, as well as the transition effects are referenced from the tutorial.
+*/
 
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   display: inline-block;
   position: absolute;
-  height: 10%;
+  height: 20%;
   width: 4%;
-  top: 45%;
+  top: 40%;
   color: black;
   border: none;
   border-radius: 10%;
@@ -220,42 +256,6 @@ li {
   background-color: rgba(0,0,0,0.8);
 }
 
-/* Caption text */
-.text {
-  color: black;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: black;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
 /* Fading animation */
 .fade {
   animation-name: fade;
@@ -267,7 +267,3 @@ li {
   to {opacity: 1}
 }
 /* end CSS for slideshow */
-
-#aboutme {
-  position: relative;
-}

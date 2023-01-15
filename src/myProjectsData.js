@@ -10,7 +10,7 @@ export default [
 	{ 
 		id: 1,
 		name: "iOS App: GradeTracker",
-		media: ios,
+		media: <video src={ios} className="media-container" controls></video>,
 		description:<ul className="project-description"><li>This is an iOS mobile and tablet application that I've been working on.</li><li>I'm in the process of designing a new UI and adding an overall GPA calculator. </li><li>It's being built in XCode with Swift, SwiftUI, and Core Data.</li></ul>,
 		position: 'nextSlide'
 	},

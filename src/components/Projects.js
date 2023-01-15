@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import ProjectSlide from "./ProjectSlide";
 import projectsData from "../myProjectsData";
+import Navbar from "./Navbar"
+
+/* referenced https://www.youtube.com/watch?v=a_7Z7C_JCyo when learning how to implement a slide show (2:13:40 - 2:50:52)*/
 
 export default function Projects() {
 	const [index, setIndex] = useState(0);
@@ -25,12 +28,17 @@ export default function Projects() {
 
 	return (
 		<section id="projects">
-			<div><h1 className="page-title">Projects</h1> </div>
+			<nav>
+				<h1 className="page-title">Projects</h1> 
+				<a className="nav-text" href="#homepage">home &uarr;</a> 
+			</nav>
 			<div className="slideshow-container">
 				{projectElements} 
 			<button className="prev" onClick={() => setIndex(index == 0 ? len-1 : index - 1)}>&lt;</button>
 			<button className="next" onClick={() => setIndex((index + 1) % len)}>&gt;</button>
 			</div>
+
+			<nav className="bottom-nav"po><a className="nav-text" href="#about-me">about &darr;</a></nav>
 		</section>
 	);
 }
