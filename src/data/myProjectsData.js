@@ -1,4 +1,4 @@
-import ios from './AddGrades.mp4';
+import ios from '../assets/AddGrades.mp4';
 export default [
 	{ 
 		id: 0,

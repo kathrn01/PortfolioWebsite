@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ProjectSlide from "./ProjectSlide";
-import projectsData from "../myProjectsData";
+import projectsData from "../data/myProjectsData";
 import Navbar from "./Navbar"
 
 /* referenced https://www.youtube.com/watch?v=a_7Z7C_JCyo when learning how to implement a slide show (2:13:40 - 2:50:52)*/

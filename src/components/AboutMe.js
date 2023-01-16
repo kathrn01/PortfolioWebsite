@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../site-logo.png';
+import logo from '../assets/site-logo.png';
 
 export default function AboutMe(){
 	return (
