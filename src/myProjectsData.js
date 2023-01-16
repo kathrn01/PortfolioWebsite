@@ -15,7 +15,7 @@ export default [
 		name: "React App: This website",
 		media:"",
 		description:<ul>
-			<li>This website was built with React, Javascript, HTML, and CSS. GitHub pages is being used to host it.</li>
+			<li>This website was built with React, Javascript, HTML, and CSS. GitHub pages is being used to host it. See the source code <a href="https://github.com/kathrn01/PortfolioWebsite">here</a>.</li>
 			<li>I'm continually learning and will continue to add features and improvements. I'd appreciate any feedback!</li>
 		</ul>,
 		position: 'nextSlide'

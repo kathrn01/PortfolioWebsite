@@ -4,9 +4,14 @@
 /* referenced https://www.youtube.com/watch?v=yU7jJ3NbPdA when learning about media queries */
 
 /* referenced https://www.youtube.com/watch?v=a_7Z7C_JCyo when learning how to implement a slide show (2:13:40 - 2:50:52)*/
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
   .nav-links {
     display: block;
+  }
+  
+  .about-me-text {
+    width: 80%;
+    margin: 5%;
   }
 }
 
@@ -50,7 +55,7 @@ html, body {
 nav {
   display: flex;
   justify-content: space-between;
-  height: 15%; 
+  height: 10vh; 
 }
 
 .nav-links {
@@ -67,6 +72,7 @@ nav {
   padding-inline: 10%;
   padding-block-end: 1%;
   margin: 2% 5%;
+  border-radius: 25px;
 }
 
 .nav-link:hover {
@@ -109,8 +115,6 @@ h3 {
   font-size: max(1.5vw, 15px);
   font-family: 'EB Garamond', serif;
   font-weight: lighter;
-  padding: 10vh 0;
-  padding-right: 15vw;
 }
 
 p {
@@ -133,8 +137,13 @@ p {
 }
 
 .homepage-text {
-  width: 75%;
-  padding: 0 7vw;
+  width: 80%;
+  padding: 5vh 7vw;
+}
+
+.homepage-text h3 {
+  padding: 10vh 0;
+  padding-right: 15vw;
 }
 
 a {
@@ -224,18 +233,20 @@ li {
 }
 
 .project .media-container {
-  width: 60%;
+  width: 30%;
   height: 100%;
   display: flex;
   height: 100%;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
+  border: 1px dashed black;
+  border-radius: 10px;
   padding: 2%;
 }
 
 video {
   height: 100%;
+  border-radius: 25px;
 }
 
 /* referenced https://www.youtube.com/watch?v=a_7Z7C_JCyo when learning how to implement a slide show (2:13:40 - 2:50:52)
@@ -286,3 +297,23 @@ the next and previous buttons, as well as the transition effects are referenced 
   to {opacity: 1}
 }
 /* end CSS for slideshow */
+
+#about-me {
+  scroll-snap-align: center;
+}
+
+#about-me section {
+  padding: 0;
+  margin-bottom: 5vh;
+}
+
+.about-me.container {
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+.about-me-text {
+  align-self: start;
+  padding: 1% 10% 5% 10%;
+  width: 75%;
+}
