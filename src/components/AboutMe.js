@@ -12,7 +12,7 @@ export default function AboutMe(){
 			</nav>
 			<div className="about-me container">
 			<div className="about-me-text">
-
+				<h2>hi</h2>
 			</div>
 			</div>
 		</section>
