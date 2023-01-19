@@ -36,7 +36,7 @@ export default [
 		name: "React App: Wordsy",
 		media: "Coming Soon!",
 		description: 
-			<ul><li>Wordsy is game project I recently began working on. It's similar to a popular word-guessing game ... except players guess 4 letter words, and there is a points system. Points are taken off for guesses that are not real words, and awarded for correct guesses.</li>
+			<ul><li>Wordsy is a game project I recently began working on. It's similar to a popular word-guessing game ... except players guess 4 letter words, and there is a points system. Points are taken off for guesses that are not real words, and awarded for correct guesses.</li>
 			<li>It's currently being built with React, Javascript, CSS, and HTML, and eventually a database to store score and player information. I hope to have an interactive version available here soon.</li>
 			<li>I decided to use the skills I developed while building this website to try and build my own game. I'm enjoying learning more about React and JS as I go.</li></ul>,
 		position: 'lastSlide'

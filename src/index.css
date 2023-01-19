@@ -27,6 +27,8 @@
   width: 100%;
   height: 100%;
   padding: 0 0 10% 0;
+  opacity: 1;
+  animation: fadein 3s;
 }
 
 * { /* All elements */
@@ -287,9 +289,9 @@ the next and previous buttons, as well as the transition effects are referenced 
 }
 
 /* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+@keyframes fadein {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 @keyframes activeSlide {
