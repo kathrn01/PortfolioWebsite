@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.game {
+	height: 110%;
+	width: 80%;
+	font-size: 90%;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	background: #f8ffec;
+	border: 1px dashed black;
+	border-radius: 10px;
+}
+
+.gameboard {
+	height: 90%;
+	width: 220px;
+	margin: 5%;
+	display: inline-block;
+	justify-self: center;
+	margin-bottom: 10%;
+	align-self: flex-end;
+}
+
+.tile {
+	height: 25%;
+	width: 50px;
+	border: 1px solid black;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	margin: 2px;
+	transition: background 1s;
+}
+
+.keyboard{
+	height: 100%;
+	width: 300px; 
+	margin: 5px 10px;
+	display: inline-block;
+	justify-self: center;
+	text-align: center;
+	margin-block: 5%;
+}
+
+.guess-replay-buttons {
+	margin-top: 5%;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.key{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 25px; 
+	height: 30%; 
+	margin: 2px;
+	padding: 2px;
+	border: 1px solid gray;
+	border-radius: 5px;
+	cursor: default;
+	transition: background 0.5s;
+}
+
+button.key.delete {
+	background: white;
+	width: 60px;
+	height: 25%;
+}
+
+button.key.guess {
+	background: #D3D3D3;
+	width: 150px;
+	height: 30px;
+	border: 1px solid black;
+	justify-self: center;
+}
+
+button.key.replay {
+	background: #d42f2f;
+	width: 150px;
+	height: 30px;
+	border: 1px solid black;
+	justify-self: center;
+}
+
+.key:hover {
+	font-weight: bold;
+}

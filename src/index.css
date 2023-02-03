@@ -119,6 +119,12 @@ h3 {
   font-weight: lighter;
 }
 
+ul h3 {
+	display: flex;	
+	font-weight: bold;
+	color: #f8ffec;
+}
+
 p {
    color: #000000;
 }
@@ -163,7 +169,7 @@ a {
 /* referenced https://www.youtube.com/watch?v=a_7Z7C_JCyo when learning how to implement a slide show (2:13:40 - 2:50:52)*/
 /* Slideshow container */
 .slideshow-container {
-  height: 75%;
+  height: 90%;
   text-align: center;
   position: relative;
   display: flex;
@@ -216,8 +222,9 @@ article.nextSlide {
 }
 
 .project .project-description {
-  justify-content: flex-start;
+  justify-content: center;
   text-align: left;
+  font-size: 110%;
   padding-right: 15px;
   width: 70%;
   padding: 2%;
