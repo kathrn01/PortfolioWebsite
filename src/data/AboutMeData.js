@@ -9,7 +9,7 @@ export default [
 		id: 1,
 		section: "experience",
 		title: "Experience",
-		content: "My professional experience consists of a freelance iOS project I completed solo in early 2022. Other software development experience consists of a group project (see Android Mobile App above in projects) as part of a university software engineering course.While my focus recently has been software-related projects, I also have quite a bit of experience in public-facing/customer service roles and consider myself to be a very good communicator." 
+		content: "My professional experience consists of a freelance iOS project I completed solo in early 2022. Other software development experience consists of a group project (see Android Mobile App above in projects) as part of a university software engineering course. While my focus recently has been software-related projects, I also have quite a bit of experience in public-facing/customer service roles and consider myself to be a very good communicator." 
 	},
 	{
 		id: 2,

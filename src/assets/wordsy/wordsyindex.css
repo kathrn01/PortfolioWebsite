@@ -13,8 +13,8 @@ code {
 }
 
 .game {
-	height: 110%;
-	width: 80%;
+	height: 100%;
+	width: 100%;
 	font-size: 90%;
 	display: grid;
 	justify-content: center;
@@ -22,6 +22,19 @@ code {
 	background: #f8ffec;
 	border: 1px dashed black;
 	border-radius: 10px;
+}
+
+@media (max-width: 900px) {
+	.game {
+		background: none;
+		border: none;
+	}
+}
+@media (max-height: 700px) {
+	.game {
+		background: none;
+		border: none;
+	}
 }
 
 .gameboard {
@@ -61,6 +74,7 @@ code {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+	color: black;
 }
 
 .key{
@@ -81,6 +95,7 @@ button.key.delete {
 	background: white;
 	width: 60px;
 	height: 25%;
+	color: black;
 }
 
 button.key.guess {

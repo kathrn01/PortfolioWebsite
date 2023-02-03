@@ -4,7 +4,7 @@
 /* referenced https://www.youtube.com/watch?v=yU7jJ3NbPdA when learning about media queries */
 
 /* referenced https://www.youtube.com/watch?v=a_7Z7C_JCyo when learning how to implement a slide show (2:13:40 - 2:50:52)*/
-@media (max-width: 1000px) {
+@media (max-width: 650px) {
   .nav-links {
     display: block;
   }
@@ -174,7 +174,7 @@ a {
   position: relative;
   display: flex;
   overflow: hidden;
-  margin: 2% 5%;
+  margin: 1% 2% 1% 2%;
   justify-content: center;
 }
 
@@ -230,7 +230,7 @@ article.nextSlide {
   padding: 2%;
   margin-right: 2%;
   height: 100%;
-  display: flex;
+  display: block;
 }
 
 ul {
@@ -308,7 +308,7 @@ the next and previous buttons, as well as the transition effects are referenced 
 /* end CSS for slideshow */
 
 #about-me {
-  scroll-snap-align: center;
+  scroll-snap-align: start;
 }
 
 #about-me section {
@@ -316,13 +316,24 @@ the next and previous buttons, as well as the transition effects are referenced 
   margin-bottom: 5vh;
 }
 
-.about-me.container {
-  justify-content: flex-start;
-  align-content: flex-start;
-}
-
 .about-me-text {
   align-self: start;
   padding: 1% 10% 5% 10%;
   width: 75%;
+}
+
+h3.about-me-text {
+  font-size: max(1.5vw, 12px); 
+}
+
+h2.about-me-text {
+  font-size: max(2vw, 15px); 
+}
+
+.bottom {
+	scroll-snap-align: center;
+	padding: 1%;
+	margin-top: 5%;
+	text-align: right;
+	background: #8bcc9a;
 }

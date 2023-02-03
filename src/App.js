@@ -10,6 +10,7 @@ function App() {
 	<Main />
 	<Projects />
 	<AboutMe />
+	<div className="bottom"><h3>Copyright © 2022-2023 by Katharine</h3></div>
     </div>
   );
 }

@@ -4,10 +4,10 @@ import data from '../data/AboutMeData.js'
 
 export default function AboutMe(){
 	const elements = data.map(elem => {
-		return (<section id={elem.section}>
+		return (<>
 				<h2>{elem.title}</h2>
-				<h3>{elem.content}</h3> 
-			</section>)
+				<h3>{elem.content}</h3><br /> 
+			</>)
 	})
 
 	return (
@@ -19,11 +19,11 @@ export default function AboutMe(){
 					<a className="nav-text" href="#homepage">home</a>
 				</div>
 			</nav>
-			<div className="about-me container">
+			
 			<div className="about-me-text">
 				{elements}
 			</div>
-			</div>
+
 		</section>
 	);
 }
