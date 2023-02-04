@@ -4,7 +4,7 @@ import Key from "./components/Key"
 import words from "./data/words.js"
 import GuessTile from './components/GuessTile'
 import boardData from './data/boardData'
-import styles from './wordsyindex.css'
+import styles from './GuessTheWordindex.css'
 
 export default function App() {
   const [currCol, setCurrCol] = useState(0); //current column (updates as user adds or deletes a letter from a guess) 

@@ -1,21 +1,21 @@
 import ios from '../assets/AddGrades.mp4';
-import Wordsy from '../assets/wordsy/App.js';
+import GuessTheWord from '../assets/GuessTheWord/App.js';
 export default [
 	{
 		id: 0,
-		name: "React App: Wordsy Game",
+		name: "React App: Guess The Word",
 		media: "",
-		description: <><Wordsy /><br /><h3 style={{fontWeight: "bold", color: "#ffffff", textAlign: "center"}}>Play the game here. See next slide for more information &rarr;</h3></>,
+		description: <><GuessTheWord /><br /><h3 style={{fontWeight: "bold", color: "#ffffff", textAlign: "center"}}>Play the game here. See next slide for more information &rarr;</h3></>,
 		position: 'activeSlide'
 	},
 	{ 
 		id: 1,
-		name: "React App: Wordsy Game",
+		name: "React App: Guess The Word",
 		media: "",
 		description: 
-			<ul><li>Wordsy is a game project I recently began working on. It's similar to a popular word-guessing game ... except players guess four letter words, and only have four guesses. Currently, there are no player stats, API for words, or points system, but those are features I hope to incorporate in the near future.</li>
+			<ul><li>Guess The Word is a game project I recently began working on. It's similar to a popular word-guessing game ... except players guess four letter words, and only have four guesses. Currently, there are no player stats, API for words, or points system, but those are features I hope to incorporate in the near future.</li>
 			<li>It's being built with React, Javascript, CSS, and HTML, and eventually a database to store score and player information. I'm learning more about React and web development as I go, and will continue to add features and refactor to better adhere to best practices.</li>
-			<h3> &larr; See last slide to play the game </h3><br /> <p><i>***Please note that the version on the last slide is modified to fit the project slide, and some interface elements appear different than the original as a result. For the original game interface, see the README file at the github page, <a href="https://github.com/kathrn01/wordsy-app">here</a>.</i></p></ul>,
+			<h3> &larr; See last slide to play the game </h3><br /> <p><i>***Please note that the version on the last slide is modified to fit the project slide, and some interface elements appear different than the original as a result. For the original game interface, see the README file at the github page, <a href="https://github.com/kathrn01/Guess-The-Word">here</a>.</i></p></ul>,
 		position: 'nextSlide'
 	},
 	{ 
